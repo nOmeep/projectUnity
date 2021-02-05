@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    public CharacterActions _heroesActions;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       // _heroesActions = GetComponent<CharacterActions>();
     }
 
     // Update is called once per frame
@@ -19,17 +21,20 @@ public class SceneController : MonoBehaviour
 
     public void AttackIsPressed()
     {
-        Debug.Log("Attack");
+        _heroesActions.attack = true;
+        Debug.Log("Attack is " + _heroesActions.attack);
     }
 
     public void ShieldIsPressed()
     {
-        Debug.Log("Shield");
+        _heroesActions.block = true;
+        Debug.Log("Shield " + _heroesActions.block);
     }
 
     public void EvasionIsPressed()
     {
-        Debug.Log("Evasion");
+        _heroesActions.evasion = true;
+        Debug.Log("Evasion " + _heroesActions.evasion);
     }
 
     public void Pause()
