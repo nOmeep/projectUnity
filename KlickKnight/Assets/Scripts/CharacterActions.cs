@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterActions : MonoBehaviour
 {
-    private Rigidbody2D _knight;
+    public Rigidbody2D _knight;
     
     public bool block = false;
     public bool attack = false;
@@ -22,10 +22,10 @@ public class CharacterActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (evasion == true && Mathf.Approximately(_knight.velocity.y, 0))
-        {
-            evasion = false;
-            _knight.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
+        //if (evasion == true && Mathf.Approximately(_knight.velocity.y, 0))
+        //{
+         //   evasion = false;
+         //   _knight.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        //}
     }
 }
