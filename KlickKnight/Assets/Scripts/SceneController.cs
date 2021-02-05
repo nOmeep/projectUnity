@@ -19,10 +19,8 @@ public class SceneController : MonoBehaviour
 
     public void EvasionIsPressed()
     {
-        _heroesActions.evasion = true;
-        if (_heroesActions.evasion == true && Mathf.Approximately(_heroesActions._knight.velocity.y, 0))
-        {
-            _heroesActions.evasion = false;
+        if (Mathf.Approximately(_heroesActions._knight.velocity.y, 0))
+        { 
             _heroesActions._knight.AddForce(Vector2.up * _heroesActions.jumpForce, ForceMode2D.Impulse);
         }
     }

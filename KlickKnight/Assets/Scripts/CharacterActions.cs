@@ -8,7 +8,6 @@ public class CharacterActions : MonoBehaviour
     
     public bool block = false;
     public bool attack = false;
-    public bool evasion = false;
     
     public int health = 3;
 
@@ -19,13 +18,8 @@ public class CharacterActions : MonoBehaviour
         _knight = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if (evasion == true && Mathf.Approximately(_knight.velocity.y, 0))
-        //{
-         //   evasion = false;
-         //   _knight.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        //}
+    
     }
 }

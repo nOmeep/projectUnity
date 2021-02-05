@@ -899,9 +899,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb7cb2829fb66547af597642d89a62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _knight: {fileID: 1400663757}
   block: 0
   attack: 0
-  evasion: 0
   health: 0
   jumpForce: 10
 --- !u!1 &1575707197
